@@ -1,0 +1,128 @@
+<!Doctype html>
+<html>
+  <title>Sculpt Gym</title>
+  <meta  charset="utf-8"name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link rel="stylesheet" type="text/css" href="../../css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+html,body {
+    background-color: rgb(110, 109, 109);
+}
+    @media only screen and (max-width:620px) {
+        /* For mobile phones: */
+        .banner-navbar,.Container,
+        .right,.footer,#quote-carousel .carousel-indicators {
+            width: 100%;
+          }
+        }
+        .h2, h2 {
+          font-size: 30px;
+          color: gold;
+        }
+        .row {
+            margin-right: -15px;
+            margin-left: 50px;
+            margin-top: 17px;
+          }
+          .h3, h3 {
+            font-size: 24px;
+            color: gold;
+          }
+          td, th {
+            padding: 5px;
+          }
+          th {
+            font-size: 15px;
+          }
+          blockquote small {
+            color: black;
+          }
+          a {
+              color: red;
+              padding-left: 11px;
+          }
+</style>
+<body>
+
+
+
+
+
+  <!--This here is the beginng of the html.-->
+  <!-- Start Banner -->
+  <nav class="navbar-container">
+      <div class="banner-navbar">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img class="sculptgym-logo" src="../../images/logo/sculptlogo.png "></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav" >
+                  <li class="active"><a id="menu" href="../../index.html">Home</a></li>
+                  <li class="dropdown">
+                      <a id="menu" href="javascript:void(0)" class="dropbtn">Personal Trainers</a>
+                      <div class="dropdown-content">
+                          <a id="menu" href="../pages/trainers/trainers.html">Trainer 1</a>
+                          <a id="menu" href="../pages/trainers/trainers2.html">Trainer 2</a>
+                          <a id="menu" href="../pages/trainers/trainers3.html">Trainer 3</a>
+                      </div>
+                  </li>
+                  <li><a id="menu" href="../pages/sucstories.html">Sucess Stories</a></li>
+                  <li><a id="menu" href="../pages/account.html">Account</a></li>
+
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a id="menu" href="../pages/login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                  <li><a id="menu" href="../pages/signup.html"><span class="glyphicon glyphicon-log-in"></span> Signup</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <!--End of banner-->
+    <!--This is the main container of the main page that contains the sign up and login form-->
+    <div class="container">
+        <!--This is the login in form which is going to be on the right side of the container
+        - Need to create a php or anylagangue form so that the user can be able to login    -->
+        <div id="login">
+            <h2>Login</h2>
+            <br>
+            <form action="login.php" method="get">
+                <div class="sign-right">
+                    <label>
+                        <b>Email</b>
+                    </label>
+                    <input type="text" placeholder="Enter email" name="emainame" required>
+                    <label>
+                        <b>Password</b>
+                    </label>
+                    <input type="text" placeholder="Enter Password" name="pswd" required>
+
+                </div>
+                <!--Right here is where the forgotlink is going to be -->
+                <div class="login-button">
+				                        <!--this is where the button for login will be and the forgot password.-->
+					<button type="submit" class="login-button">Login</button>
+						<input id ="rememberbox" type ="checkbox" checked="checked">Remeber me
+					<div id="cancel-button-area">
+					<button type="button" class="cancel-button">Cancel</button>
+						<span class="psw"><a href="#">Forgot your password?</a></span>
+					</div>
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+
+</body>
+</html>
+<input type="hidden" name="Linner Rivas">
+<!--Linner Rivas-->

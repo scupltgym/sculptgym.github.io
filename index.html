@@ -1,0 +1,265 @@
+<!Doctype html>
+<html>
+  <head>
+    <title>Sculpt Gym</title>
+        <meta  charset="utf-8"name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <style>
+        html,body {
+            background-color: rgb(110, 109, 109);
+        }
+            @media only screen and (max-width:620px) {
+                /* For mobile phones: */
+                .banner-navbar,.Container,
+                .right,.footer,#quote-carousel .carousel-indicators {
+                    width: 100%;
+                  }
+                }
+                .h2, h2 {
+                  font-size: 30px;
+                  color: gold;
+                }
+                .row {
+                    margin-right: -15px;
+                    margin-left: 50px;
+                    margin-top: 17px;
+                  }
+                  .h3, h3 {
+                    font-size: 24px;
+                    color: gold;
+                  }
+                  td, th {
+                    padding: 5px;
+                  }
+                  th {
+                    font-size: 15px;
+                  }
+                  blockquote small {
+                    color: black;
+                  }
+                  a {
+                      color: red;
+                      padding-left: 11px;
+                  }
+          </style>
+  </head>
+
+  <body>
+    <!--This here is the beginng of the html.-->
+    <!-- Start Banner -->
+    <nav class="navbar-container">
+        <div class="banner-navbar">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img class="sculptgym-logo" src="images/logo/sculptlogo.png "></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav" >
+                    <li class="active"><a id="menu" href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a id="menu" href="javascript:void(0)" class="dropbtn">Personal Trainers</a>
+                        <div class="dropdown-content">
+                          <a id="menu" href="../pages/trainers/trainers.html">Trainer 1</a>
+                          <a id="menu" href="../pages/trainers/trainers2.html">Trainer 2</a>
+                          <a id="menu" href="../pages/trainers/trainers3.html">Trainer 3</a>
+                      </div>
+                    </li>
+                    <li><a id="menu" href="../pages/sucstories.html">Sucess Stories</a></li>
+                    <li><a id="menu" href="../pages/account.html">Account</a></li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a id="menu" href="../pages/login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li><a id="menu" href="../pages/signup.html"><span class="glyphicon glyphicon-log-in"></span> Signup</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--End of banner-->
+    <!--This is the start of the container
+        - the container will contain the following the:
+            - Carsouel iamge
+            - aside tag
+            - Quote Area,Gym info, Copright(footer)-->
+
+    <div class="Container">
+        <!--The left-side part that contains all the info of the gym-->
+        <div class="left-side">
+            <aside class="Menu-info">
+                <div id="aboutus-part">
+                    <h2 id="About-us-Title">About Us</h2>
+                    <p id="about-us">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<a id="about-us-link" href="https://www.w3schools.com/html/">Learn more.</a></p>
+                </div>
+                <div id="hoursofoperation">
+                  <h3>Hours of Operation</h3>
+                  <table>
+                    <tr><th>Sunday</th><td>  5AM-6PM</td></tr>
+                    <tr><th>Monday</th><td>  5AM-11PM</td></tr>
+                    <tr><th>Tuesday</th><td>  5AM-11PM</td></tr>
+                    <tr><th>Wednesday</th><td>  5AM-11PM</td></tr>
+                    <tr><th>Thursday</th><td>  5AM-11PM</td></tr>
+                    <tr><th>Friday</th><td>  5AM-11PM</td></tr>
+                    <tr><th>Saturday</th><td>  5AM-11PM</td></tr>
+                    <tr><th>Closed</th><td>  All Holidays</td></tr>
+                </table>
+            </aside>
+            </div>
+        <!--The Carousel part starts here the image will be going around-->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+
+                <div class="item active">
+                    <img src="images/carousel/gym_storefront_rmk.png" alt="imagen1" style="width:100%;">
+                </div>
+
+                <div class="item">
+                    <img src="images/carousel/weight_rack.jpg" alt="imagen2" style="width:100%;">
+                </div>
+
+                <div class="item">
+                    <img src="images/carousel/man_kettle.jpeg" alt="imagen3" style="width:100%;">
+                </div>
+
+                <div class="item">
+                    <img src="images/carousel/pexels-photo.jpg" alt="imagen4" style="width:100%;">
+                </div>
+
+                <div class="item">
+                    <img src="images/carousel/stock-photo-strength-guy-relax-strong-rest-flash-fitness-workout-gym-98b25bd7-d130-4d9f-93f9-3d401afe4a1d.jpg" alt="imagen5" style="width:100%;">
+                </div>
+
+                <div class="item">
+                    <img src="images/carousel/trainer_trainee.jpeg" alt="imagen6" style="width:100%;">
+                </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <!--End of Container-->
+        <div class="container text-center">
+            <section>
+                <div class="row">
+                    <div class='col-md-offset-2 col-md-8 text-center'>
+                        <h2>Fitness Quotes</h2>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-offset-2 col-md-8'>
+                        <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                            <!-- Carousel Slides / Quotes -->
+                            <div class="carousel-inner">
+                                <!-- Quote 1 -->
+                                <div class="item active">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-sm-9">
+                                                <p id= "quote">Take care of your body. It&apos;s the only place you have to live.</p>
+                                                <small>Jim Rohn</small>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                                <!-- End Quote 1 -->
+                                <!-- Quote 2 -->
+                                <div class="item">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-sm-9">
+                                                <p id= "quote">Today I will do what others won&apos;t, so tomorrow I can accomplish what others can&apos;t</p>
+                                                <small>Jerry Rice</small>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                                <!-- End Quote 2 -->
+                                <!-- Quote 3 -->
+                                <div class="item">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-sm-9">
+                                                <p id= "quote">The difference between the impossible and the possible lies in a person&apos;s determination.</p>
+                                                <small>Tommy Lasorda</small>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                                <!--End of Quote 3-->
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+
+              <div class="beforeNafter">
+                  <div class="col-sm-4">
+                    <h4>Before</h4>
+                      <img src="images/customer/nuttyprofessorskinny.jpg" class="img-responsive" style="width:50%;height:20%;" alt="Image">
+
+                  </div>
+                  <div class="col-sm-4">
+                    <h4>After</h4>
+                      <img src="images/customer/nuttyprofessorfat.jpg" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+
+              </div>
+        </div>
+    </div>
+
+        <footer class="container-fluid text-center">
+            <p id="copyright-footer" style="text-align:center;">Copyright&copy; TeamOutStanding</p>
+        </footer>
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>
+            window.jQuery || document.write('<script src="http://townsvillepersonalinjurylawyers.com.au/app/themes/macdonnells-law/js/vendor/jquery.min.js"><\/script>')
+        </script>
+        <script src="http://townsvillepersonalinjurylawyers.com.au/app/themes/macdonnells-law/js/bootstrap.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDX5tvSXwosIfrnPKr2Drrz5uU_hcE2No&callback=initMap"></script>
+        <script src="http://townsvillepersonalinjurylawyers.com.au/app/themes/macdonnells-law/js/Townsville Personal Injury Lawyers-custom.js"></script>
+
+        <link rel='stylesheet' id='cf-front-styles-css' href='http://townsvillepersonalinjurylawyers.com.au/app/plugins/caldera-forms/assets/css/caldera-forms-front.min.css?ver=1.4.6.7' type='text/css' media='all' />
+        <link rel='stylesheet' id='cf-field-styles-css' href='http://townsvillepersonalinjurylawyers.com.au/app/plugins/caldera-forms/assets/css/fields.min.css?ver=1.4.6.7' type='text/css' media='all' />
+        <script type='text/javascript'>
+            /* <![linnenr[ */
+            var twentyseventeenScreenReaderText = {
+                "quote": "<svg class=\"icon icon-quote-right\" aria-hidden=\"true\" role=\"img\"> <use href=\"#icon-quote-right\" xlink:href=\"#icon-quote-right\"><\/use> <\/svg>",
+                "expand": "Expand child menu",
+                "collapse": "Collapse child menu",
+                "icon": "<svg class=\"icon icon-angle-down\" aria-hidden=\"true\" role=\"img\"> <use href=\"#icon-angle-down\" xlink:href=\"#icon-angle-down\"><\/use> <span class=\"svg-fallback icon-angle-down\"><\/span><\/svg>"
+            };
+            /* ]]> */
+        </script>
+        <script type='text/javascript' src='http://townsvillepersonalinjurylawyers.com.au/app/themes/macdonnells-law/assets/js/skip-link-focus-fix.js?ver=1.0'></script>
+        <script type='text/javascript' src='http://townsvillepersonalinjurylawyers.com.au/app/themes/macdonnells-law/assets/js/navigation.js?ver=1.0'></script>
+        <script type='text/javascript' src='http://townsvillepersonalinjurylawyers.com.au/app/themes/macdonnells-law/assets/js/global.js?ver=1.0'></script>
+        <script type='text/javascript' src='http://townsvillepersonalinjurylawyers.com.au/app/themes/macdonnells-law/assets/js/jquery.scrollTo.js?ver=2.1.2'></script>
+        <script type='text/javascript' src='http://townsvillepersonalinjurylawyers.com.au/wp/wp-includes/js/wp-embed.min.js?ver=4.7.5'></script>
+        <script type='text/javascript' src='http://townsvillepersonalinjurylawyers.com.au/app/plugins/caldera-forms/assets/js/jquery.baldrick.min.js?ver=1.4.6.7'></script>
+        <script type='text/javascript' src='http://townsvillepersonalinjurylawyers.com.au/app/plugins/caldera-forms/assets/js/ajax-core.min.js?ver=1.4.6.7'></script>
+        <script type='text/javascript' src='http://townsvillepersonalinjurylawyers.com.au/app/plugins/caldera-forms/assets/js/fields.min.js?ver=1.4.6.7'></script>
+        <script type='text/javascript' src='http://townsvillepersonalinjurylawyers.com.au/app/plugins/caldera-forms/assets/js/parsley.min.js?ver=1.4.6.7'></script>
+        <script type='text/javascript' src='http://townsvillepersonalinjurylawyers.com.au/app/plugins/caldera-forms/assets/js/frontend-script-init.min.js?ver=1.4.6.7'></script>
+
+  </body>
+</html>
+<input type="hidden" name="Linner Rivas">
+<!--Linner Rivas-->
