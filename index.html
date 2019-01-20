@@ -27,7 +27,7 @@
                 .row {
                     margin-right: -15px;
                     margin-left: 50px;
-                    margin-top: 17px;
+                    /* margin-top: 17px; */
                   }
                   .h3, h3 {
                     font-size: 24px;
@@ -127,10 +127,6 @@
       <!--The left-side part that contains all the info of the gym-->
       <div class="left-side">
         <aside class="Menu-info">
-          <div id="aboutus-part">
-            <h2 id="About-us-Title">About Us</h2>
-            <p id="about-us">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<a id="about-us-link" href="https://www.w3schools.com/html/">Learn more.</a></p>
-          </div>
           <div class="container operating-hour">
             <div class="row">
               <div class="col-sm-4">
@@ -154,13 +150,17 @@
       </div>
       <!--End of Container-->
       <div class="container text-center">
-        <section>
+        <section id="about">
+          <div id="aboutus-part">
+            <h2 id="About-us-Title">About Us</h2>
+            <p id="about-us">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<a id="about-us-link" href="https://www.w3schools.com/html/">Learn more.</a></p>
+          </div>
+        </section>
+        <section id="fit-quotes">
           <div class="row">
             <div class='col-md-offset-2 col-md-8 text-center'>
               <h2>Fitness Quotes</h2>
             </div>
-          </div>
-          <div class='row'>
             <div class='col-md-offset-2 col-md-8'>
               <div class="carousel slide" data-ride="carousel" id="quote-carousel">
                 <!-- Carousel Slides / Quotes -->
@@ -206,17 +206,18 @@
             </div>
           </div>
         </section>
-
-        <div class="beforeNafter">
-          <div class="col-sm-4">
-            <h4>Before</h4>
-            <img src="images/customer/nuttyprofessorskinny.jpg" class="img-responsive" style="width:50%;height:20%;" alt="Image">
+        <section id ="sucstories">
+          <div class="beforeNafter">
+            <div class="col-sm-4">
+              <h4>Before</h4>
+              <img src="images/customer/nuttyprofessorfat.jpg" class="img-responsive" alt="Image">
+            </div>
+            <div class="col-sm-4">
+              <h4>After</h4>
+              <img src="images/customer/nuttyprofessorskinny.jpg" class="img-responsive-after" alt="Image">
+            </div>
           </div>
-          <div class="col-sm-4">
-            <h4>After</h4>
-            <img src="images/customer/nuttyprofessorfat.jpg" class="img-responsive" style="width:100%" alt="Image">
-          </div>
-        </div>
+        </section>
       </div>
     </div>
     <footer class="container-fluid text-center">

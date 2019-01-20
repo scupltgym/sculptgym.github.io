@@ -199,13 +199,19 @@ div#trainer-one {
     /* float: left; */
 }
 #About-us-Title {
-    color: #C4B718;
+    color: grey;
     padding-left: 10px;
 }
 #about-us {
     color: white;
     margin-left: 10px;
     padding-left: 10px;
+}
+section#about {
+    margin-top: 11%;
+    margin-left: 38%;
+    margin-right: -18%;
+    width: 50%;
 }
 #myCarousel {
   height:50%;
@@ -230,16 +236,26 @@ table {
 h2#About-us-Title {
     text-align: center;
 }
-
 .Container {
-    float: left;
+     float: left;
     margin-top: 26px;
 }
+.container.operating-hour {
+    margin-left: 19%;
+}
 .beforeNafter {
-  margin-top: 42px;
-  width: 118%;
-  float: left;
-  margin-left: 15%;
+    margin-top: 42px;
+    width: 118%;
+    float: left;
+    margin-left: 15%;
+    margin-bottom: 36px;
+}
+section#fit-quotes {
+    margin-top: 25%;
+    margin-bottom: 5%;
+}
+.col-md-offset-2.col-md-8.text-center {
+    margin-bottom: 5%;
 }
 
 .carousel-inner {
@@ -250,13 +266,10 @@ h2 {
     font-size: 30px;
     color: gold;
 }
-img.img-responsive {
+/* img.img-responsive {
     height: 200px;
-  }
-  .container.text-center {
-      float: left;
-      text-align: center;
-  }
+  } */
+
 
   footer.container-fluid.text-center {
       float: left;
@@ -324,11 +337,7 @@ li {
     font-weight: bold;
 }
 
-.container.text-center {
-    float: left;
-    width: 50%;
 
-}
 #before-image-area {
     float: left;
     padding-bottom: 23px;
