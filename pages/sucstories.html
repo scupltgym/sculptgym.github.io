@@ -3,22 +3,23 @@
   <head>
     <title>Sculpt Gym</title>
         <meta  charset="utf-8"name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="../../css/style.css">
+        <link rel="icon" href="../favicon.ico" type="image/gif" sizes="16x16">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+        <script src="../js/hours.js"></script>
+        <script src="../js/menu.js"></script>
         <style>
-
+        html,body {
+            background-color: rgb(110, 109, 109);
+        }
             @media only screen and (max-width:620px) {
                 /* For mobile phones: */
                 .banner-navbar,.Container,
                 .right,.footer,#quote-carousel .carousel-indicators {
                     width: 100%;
                   }
-                }
-                html,body {
-                    background-color: rgb(110, 109, 109);
                 }
                 .h2, h2 {
                   font-size: 30px;
@@ -27,7 +28,7 @@
                 .row {
                     margin-right: -15px;
                     margin-left: 50px;
-                    margin-top: 17px;
+                    /* margin-top: 17px; */
                   }
                   .h3, h3 {
                     font-size: 24px;
@@ -50,40 +51,31 @@
   </head>
 
   <body>
+
     <!--This here is the beginng of the html.-->
     <!-- Start Banner -->
-    <nav class="navbar-container">
-        <div class="banner-navbar">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#"><img class="sculptgym-logo" src="../../images/logo/sculptlogo.png "></a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav" >
-                    <li class="active"><a id="menu" href="../../index.html">Home</a></li>
-                    <li class="dropdown">
-                        <a id="menu" href="javascript:void(0)" class="dropbtn">Personal Trainers</a>
-                        <div class="dropdown-content">
-                            <a id="menu" href="../pages/trainers/trainers.html">Trainer 1</a>
-                            <a id="menu" href="../pages/trainers/trainers2.html">Trainer 2</a>
-                            <a id="menu" href="../pages/trainers/trainers3.html">Trainer 3</a>
-                        </div>
-                    </li>
-                    <li><a id="menu" href="pages/sucstories.html">Sucess Stories</a></li>
-                    <li><a id="menu" href="pages/account.html">Account</a></li>
-
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a id="menu" href="../pages/login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                    <li><a id="menu" href="../pages/signup.html"><span class="glyphicon glyphicon-log-in"></span> Signup</a></li>
-                </ul>
-            </div>
+  <header>
+    <!-- <img class="sculptgym-logo" src="images/logo/sculptlogo.png"> -->
+        <div class="navbar">
+          <img class="sculptgym-logo" src="../images/Logo/sculptlogo.png">
+          <nav class="menu" style="height: 949px;">
+            <div class="nav-layer" style="width: 4283.46px; height: 4283.46px; margin-top: -2141.73px; margin-left: -2141.73px;"></div>
+            <ul>
+              <li><a href="../index.html"><span class="glyphicon glyphicon-home">&nbsp;</span>Home</a></li>
+              <li><a href="#about"><span class="glyphicon glyphicon-info-sign">&nbsp;</span>About</a></li>
+              <li><a href="../pages/trainers.html"><span class="glyphicon glyphicon-user">&nbsp;</span>Personal Trainers</a></li>
+              <li><a href="../pages/sucstories.html"><span class="glyphicon glyphicon-book">&nbsp;</span>Sucess Stories</a></li>
+              <li><a href="../pages/login.html"><span class="glyphicon glyphicon-log-in">&nbsp;</span>Login</a></li>
+              <li><a href="../pages/signup.html"><span class="glyphicon glyphicon-pencil">&nbsp;</span> Signup</a></li>
+            </ul>
+          </nav>
+          <a class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
         </div>
-    </nav>
+    </header>
     <!--End of banner-->
     <!--This is the start of the container
         - the container will contain the following the:
@@ -92,56 +84,68 @@
             - Quote Area,Gym info, Copright(footer)-->
 
     <div class="Container">
+      <div class="container text-center">
+        <div id="before-image-area">
+          <h3 id ="Before-Image">Before:</h3>
+          <img class="beforeimage" style="width:50%" src="../images/beforenafter/jonahhill-fat.jpg">
+        </div>
+        <div id="After-image-area">
+          <h3 id ="after-Image">After:</h3>
+          <img class="afterimage" style="width:50%;" src="../images/beforenafter/jonahill-loss.jpg">
+        </div>
+        <div class="reviewstar-area"style="width:100%;float:left;margin-top:20px;">
+          <div class="star1"></div>
+          <div class="star2"></div>
+          <div class="star3"></div>
+          <div class="star4"></div>
+          <div class="star5"></div>
+        <!--  <span class="ch ch-star checked"></span>
+          <span class="ch ch-star checked"></span>
+          <span class="ch ch-star checked"></span>
+          <span class="ch ch-star checked"></span>
+          <span class="ch ch-star "></span>-->
+
+        </div>
+        <div id="text-form">
+          <form action="/action_page.php" target="_blank" method="GET" style="width:100%;float:left;margin-top:20px;">
+            <input type="text" name="info" value="text-info">
+            <input type="sumbit" value="Submit" >
+          </form>
+        </div>
+      </div>
         <!--The left-side part that contains all the info of the gym-->
         <div class="left-side">
-            <aside class="Menu-info">
-                <div id="aboutus-part">
-                    <h2 id="About-us-Title">About Us</h2>
-                    <p id="about-us">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<a id="about-us-link" href="https://www.w3schools.com/html/">Learn more.</a></p>
+          <aside class="Menu-info">
+            <div class="container operating-hour">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="business-hours">
+                    <h2 class="title">Hours of Operation</h2>
+                    <ul class="list-unstyled opening-hours">
+                      <li>Sunday <span class="pull-right">5:00AM - 6:00PM</span></li>
+                      <li>Monday <span class="pull-right">5:00AM - 11:00PM</span></li>
+                      <li>Tuesday <span class="pull-right">5:00AM - 11:00PM</span></li>
+                      <li>Wednesday <span class="pull-right">5:00AM - 11:00PM</span></li>
+                      <li>Thursday <span class="pull-right">5:00AM - 11:00PM</span></li>
+                      <li>Friday <span class="pull-right">5:00AM - 11:00PM</span></li>
+                      <li>Saturday <span class="pull-right">5:00AM - 11:00PM</span></li>
+                      <li>Closed <span class="pull-right">All Holidays</span></li>
+                    </ul>
+                  </div>
                 </div>
-                <div id="hoursofoperation">
-                  <h3>Hours of Operation</h3>
-                  <table>
-                    <tr><th>Sunday</th><td>  5AM-6PM</td></tr>
-                    <tr><th>Monday</th><td>  5AM-11PM</td></tr>
-                    <tr><th>Tuesday</th><td>  5AM-11PM</td></tr>
-                    <tr><th>Wednesday</th><td>  5AM-11PM</td></tr>
-                    <tr><th>Thursday</th><td>  5AM-11PM</td></tr>
-                    <tr><th>Friday</th><td>  5AM-11PM</td></tr>
-                    <tr><th>Saturday</th><td>  5AM-11PM</td></tr>
-                    <tr><th>Closed</th><td>  All Holidays</td></tr>
-                </table>
-            </aside>
-          </div>
-          <div class="container text-center">
-            <div id="before-image-area">
-              <h3 id ="Before-Image">Before:</h3>
-              <img class="beforeimage" style="width:50%" src="../../images/beforenafter/jonahhill-fat.jpg">
+                <div class="col-sm-4">
+                  <section id="about">
+                    <div id="aboutus-part">
+                      <h2 id="About-us-Title">About Us</h2>
+                      <p id="about-us">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<a id="about-us-link" href="https://www.w3schools.com/html/">Learn more.</a></p>
+                    </div>
+                  </section>
+                </div>
+              </div>
             </div>
-            <div id="After-image-area">
-              <h3 id ="after-Image">After:</h3>
-              <img class="afterimage" style="width:50%;" src="../../images/beforenafter/jonahill-loss.jpg">
-            </div>
-            <div class="reviewstar-area"style="width:100%;float:left;margin-top:20px;">
-              <div class="star1"></div>
-              <div class="star2"></div>
-              <div class="star3"></div>
-              <div class="star4"></div>
-              <div class="star5"></div>
-            <!--  <span class="ch ch-star checked"></span>
-              <span class="ch ch-star checked"></span>
-              <span class="ch ch-star checked"></span>
-              <span class="ch ch-star checked"></span>
-              <span class="ch ch-star "></span>-->
+          </aside>
+        </div>
 
-            </div>
-            <div id="text-form">
-              <form action="/action_page.php" target="_blank" method="GET" style="width:100%;float:left;margin-top:20px;">
-                <input type="text" name="info" value="text-info">
-                <input type="sumbit" value="Submit" >
-              </form>
-            </div>
-          </div>
     </div>
         <!--End of Container-->
 
