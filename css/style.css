@@ -362,7 +362,7 @@ div#After-image-area {
     margin-top: 10px;
     float: left;
   }
-  .operating-hour{
+.operating-hour{
 background: #ffac0c;
 margin-top: 60px;
 }
@@ -400,4 +400,135 @@ border-bottom: none;
 }
 .business-hours .opening-hours li.today {
 color: #ffac0c;
+}
+
+/* About us For the Trainner */
+.aboutus-section {
+    padding: 90px 0;
+}
+.aboutus-title {
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin: 0 0 39px;
+    padding: 0 0 11px;
+    position: relative;
+    text-transform: uppercase;
+    color: #000;
+}
+.aboutus-title::after {
+    background: #fdb801 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 54px;
+}
+.aboutus-text {
+    color: white;
+    font-size: 13px;
+    line-height: 22px;
+    margin: 0 0 35px;
+}
+
+a:hover, a:active {
+    color: #ffb901;
+    text-decoration: none;
+    outline: 0;
+}
+.aboutus-more {
+    border: 1px solid #fdb801;
+    border-radius: 25px;
+    color: #fdb801;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0;
+    padding: 7px 20px;
+    text-transform: uppercase;
+}
+.feature .feature-box .iconset {
+    background: #000000 none repeat scroll 0 0;
+    float: left;
+    position: relative;
+    width: 18%;
+}
+.feature .feature-box .iconset::after {
+    background: #fdb801 none repeat scroll 0 0;
+    content: "";
+    height: 150%;
+    left: 43%;
+    position: absolute;
+    top: 100%;
+    width: 1px;
+}
+
+.feature .feature-box .feature-content h4 {
+    color: #0f0f0f;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin: 0 0 5px;
+}
+
+
+.feature .feature-box .feature-content {
+    float: left;
+    padding-left: 28px;
+    width: 78%;
+		padding-top: 3%;
+}
+.feature .feature-box .feature-content h4 {
+    color: #fdb801;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin: 0 0 5px;
+}
+.feature .feature-box .feature-content p {
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 22px;
+}
+.icon {
+    color : #fdb801;
+    padding:0px;
+    font-size:40px;
+    border: 1px solid #fdb801;
+    border-radius: 100px;
+    color: #fdb801;
+    font-size: 28px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    width: 70px;
+}
+
+span.glyphicon.glyphicon-cog.icon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.col-md-3.col-sm-6.col-xs-12{
+	    width: 30.5%;
+}
+.col-md-5.col-sm-6.col-xs-12 {
+    width: 38.666667%;
+}
+a#tab-trainer1 {
+    color: #fdb801;
+}
+a#tab-trainer2 {
+    color: #fdb801;
+}
+
+a#tab-trainer3 {
+    color: #fdb801;
 }
