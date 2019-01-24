@@ -532,3 +532,9 @@ a#tab-trainer2 {
 a#tab-trainer3 {
     color: #fdb801;
 }
+.login-form {
+    /* align-self: center; */
+    float: right;
+    margin-left: 57%;
+    margin-right: -221%;
+}

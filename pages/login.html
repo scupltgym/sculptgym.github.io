@@ -3,7 +3,7 @@
   <head>
     <title>Sculpt Gym</title>
         <meta  charset="utf-8"name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="../favicon.ico" type="../image/gif" sizes="16x16">
+        <link rel="icon" href="../favicon.ico" type="image/gif" sizes="16x16">
         <link rel="stylesheet" type="text/css" href="../css/style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
@@ -13,6 +13,7 @@
         <style>
         html,body {
             background-color: rgb(110, 109, 109);
+            width:100%;
         }
             @media only screen and (max-width:620px) {
                 /* For mobile phones: */
@@ -76,36 +77,38 @@
     </header>
   <!--End of banner-->
     <!--This is the main container of the main page that contains the sign up and login form-->
-    <div class="container">
+    <div class="Container">
         <!--This is the login in form which is going to be on the right side of the container
         - Need to create a php or anylagangue form so that the user can be able to login    -->
-        <div id="login">
-            <h2>Login</h2>
-            <br>
-            <form action="login.php" method="get">
-                <div class="sign-right">
-                    <label>
-                        <b>Email</b>
-                    </label>
-                    <input type="text" placeholder="Enter email" name="emainame" required>
-                    <label>
-                        <b>Password</b>
-                    </label>
-                    <input type="text" placeholder="Enter Password" name="pswd" required>
+      
+  <div class="login-form">
+    <h1 class="form-heading">login Form</h1>
+  <div class="main-div">
+      <div class="panel">
+     <p>Please enter your email and password</p>
+     </div>
+      <form id="Login">
 
-                </div>
-                <!--Right here is where the forgotlink is going to be -->
-                <div class="login-button">
-				                        <!--this is where the button for login will be and the forgot password.-->
-					<button type="submit" class="login-button">Login</button>
-						<input id ="rememberbox" type ="checkbox" checked="checked">Remeber me
-					<div id="cancel-button-area">
-					<button type="button" class="cancel-button">Cancel</button>
-						<span class="psw"><a href="#">Forgot your password?</a></span>
-					</div>
-                </div>
-            </form>
-        </div>
+          <div class="form-group">
+
+
+              <input type="email" class="form-control" id="inputEmail" placeholder="Email Address">
+
+          </div>
+
+          <div class="form-group">
+
+              <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+
+          </div>
+          <div class="forgot">
+          <a href="reset.html">Forgot password?</a>
+  </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+
+      </form>
+      </div>
+  </div>
     </div>
 
     <footer class="container-fluid text-center">
